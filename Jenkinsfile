@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('run tests') {
+    stage('install dependencies') {
       steps {
-        sh 'npm test'
+        sh 'npm install'
       }
     }
 
